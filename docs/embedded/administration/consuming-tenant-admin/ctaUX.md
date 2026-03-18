@@ -15,9 +15,12 @@ For information on the SharePoint Embedded Administrator role, see [SharePoint E
 The following actions are supported in SharePoint Admin Center:
 
 1. View active containers in the tenant
+2. View archived containers in the tenant
 1. View deleted containers in the tenant
 1. View detailed information about a container
-1. Delete a container
+2. Archive an active container
+1. Reactivate an archived container
+1. Delete an active or archived container
 1. Restore a deleted container
 1. Permanently deleted a container
 2. Sort active containers in the tenant
