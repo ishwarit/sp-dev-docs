@@ -68,6 +68,63 @@ The detailed container view provides a deeper dive into container-specific metad
 
 ![SharePoint Embedded Membership Roles](../../images/ctaux5.png)
 
+## Archived Containers
+
+The Archived containers page lists all containers in the tenant's archived container collection. It lists the following metadata:
+
+1. Container name
+1. Application name
+1. Publisher
+1. Status
+1. Time archived
+1. Archived by
+1. Storage (GB)
+1. Ownership type
+1. Principal owner
+   
+![Archived Containers SPE admin](../../images/.png)
+
+## Archive a container
+
+A container can be archived when it’s no longer actively used but must be retained for legal, compliance, or business purposes. From the Active containers page, the CTA can select a container and choose Archive option to start the archival process.
+
+![Screenshot (154)](media/ctaux/screenshot-(154).png)
+This opens the side panel that educates admin about the implication of archival action and ways of getting back the archived content. The CTA can at this stage either cancel the panel and go back to the active containers page or proceed further with the archival by clicking on “Archive”.
+
+![User's image](media/ctaux/image2.png)
+
+The selected container is successfully archived and moved into the Archived containers page. ![User's image](media/ctaux/image3.png)
+
+## Reactivate Archived Containers
+
+Archived containers aren’t accessible to users or applications until they’re reactivated. The time required to reactivate a container depends on how long it has been archived. Containers archived within the last seven days are in the Recently archived state. After this period, containers transition to the Fully archived state.
+
+### Reactivate Recently Archived Containers
+
+From the Archived containers page, the CTA can select a Recently archived container and choose Reactivate option to start the reactivation process.
+
+![Screenshot (155)](media/ctaux/screenshot-(155).png)
+
+This opens a side panel that informs admin about the reactivation time. The CTA can at this stage either cancel the panel and go back to the Archived containers page or proceed further with the reactivation by clicking on “Reactivate”.
+
+![User's image](media/ctaux/image4.png)
+
+The selected container is successfully reactivated and moved into the Active containers page. ![User's image](media/ctaux/image5.png)
+
+### Reactivate Fully Archived Containers
+
+From the Archived containers page, the CTA can select a Fully archived container and choose Reactivate option to start the reactivation process.
+
+![Screenshot (156)](media/ctaux/screenshot-(156).png)
+
+This opens a side panel that informs admin about the reactivation time of __24 hours__. The CTA can at this stage either cancel the panel and go back to the Archived containers page or proceed further with the reactivation by clicking on “Reactivate”.
+
+![User's image](media/ctaux/image6.png)
+
+Reactivation request gets submitted for the selected container and it is displayed on the Archived containers page in the "Reactivating" state. Once the reactivation completes after 24 hours, the container is moved to the Active containers page.
+
+![User's image](media/ctaux/image7.png)
+
 ## Deleted Containers
 
 The deleted containers page lists all containers in the tenant's deleted container collection. It lists the following metadata:
@@ -109,13 +166,15 @@ The selected container is successfully deleted and moved into the deleted contai
 
 **Deleted containers are permanently purged after 93 days unless there is a retention policy applied to the containers.**
 
+Archived containers page also provides the same delete experience for selecting archived containers and deleting.
+
 ## Restore a container
 
 A container in the deleted container collection can be restored on the Deleted containers page by selecting the corresponding containers by selecting the "Restore" link
 
 ![Restore Button SPE Container](../../images/ctaux10.png)
 
-Restoration of the container happens in the background and the status of the same is displayed on the top-right corner of the page. Upon successful restoration, the container will be available in the Active Containers page.
+Restoration of the container happens in the background and the status of the same is displayed on the top-right corner of the page. Upon successful restoration, the container will be available in the Active Containers page. If the container was in archived state at the time of deletion, then the container will be restored back to archived state.
 
 ![Restored SPE Container](../../images/ctaux11.png)
 
